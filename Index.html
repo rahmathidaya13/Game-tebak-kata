@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Tebak Kata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .clue, .message, .score {
+      margin: 20px 0;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Game Tebak Kata</h1>
+  <div class="clue"></div>
+  <input type="text" id="guess" placeholder="Tebak kata..." />
+  <button onclick="checkGuess()">Tebak</button>
+  <div class="message"></div>
+  <div class="score">Skor: 0</div>
+  <div class="attempts">Kesempatan: 3</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
